@@ -1,6 +1,23 @@
-@import 'fonts';
+// Libs
+@import "lib/bootstrap/bootstrap-grid";
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
-}
+// Helpers
+@import "helpers/_all";
+
+// Generated
+@import "generated/_sprite-svg";
+
+// Common
+@import "common";
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+// Components
+@import "components/all";
+
+// Blocks
+@import "blocks/all";
+
+// Pages
+@import "pages/all";

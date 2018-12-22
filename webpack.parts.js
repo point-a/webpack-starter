@@ -118,6 +118,18 @@ exports.loadCSS = ({ include, exclude, use } = {}) => ({
         use: [
           {
             loader: 'style-loader'
+          }, { 
+			loader: 'css-loader', 
+			options: {
+				sourceMap: true
+			}
+          }, {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'),
+			  fiber: Fiber,
+			  sourceMap: true
+            }
           },
           ...sharedCSSLoaders.concat(use)
         ]
