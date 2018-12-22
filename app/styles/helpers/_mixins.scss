@@ -54,7 +54,7 @@
 }
 
 @mixin gpu {
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
 }
 
 @mixin lg {
@@ -103,17 +103,16 @@
     }
 }
 
-
 @mixin counter($var, $sep) {
-    counter-reset: list + $var;
+	counter-reset: list + $var;
+
     & > li {
-        &:before {
+        &::before {
             content: counter(list + $var) $sep;
             counter-increment: list + $var;
         }
     }
 }
-
 
 // Position absolute
 @mixin absolute() {

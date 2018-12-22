@@ -1,11 +1,15 @@
 {
-  "plugins": [
-    "stylelint-scss"
-  ],
-  "extends": "stylelint-config-standard",
-  "rules": {
-            "selector-list-comma-newline-after": null,
-			"indentation": null,
-			"no-descending-specificity": null
-        }
+  	"plugins": [
+    	"stylelint-scss"
+  	],
+  	"extends": "stylelint-config-standard",
+  	"rules": {
+		"selector-list-comma-newline-after": null,
+		"indentation": null,
+		"no-descending-specificity": null,
+		"max-empty-lines": null,
+		"media-feature-name-no-unknown": null,
+		"at-rule-no-unknown": null,
+		"scss/at-rule-no-unknown": true
+	}
 }
